@@ -1,9 +1,9 @@
 package game;
 
-import java.awt.Color;
 // ? Imports
-import java.awt.Dimension;
 import javax.swing.JPanel;
+import java.awt.Dimension;
+import java.awt.Color;
 
 public class GamePanel extends JPanel implements Runnable {
     // ^ Generate a number between 0 and 6
@@ -28,6 +28,7 @@ public class GamePanel extends JPanel implements Runnable {
         this.setDoubleBuffered(true);
 
         // ! Set the background color of the panel
+        this.setBackground(Color.BLACK);
     }
 
     public void start() {
